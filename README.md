@@ -15,7 +15,7 @@ Shoppies_Awards is a front-end web app that allows users to nominate upto 5 movi
 ### App Features
 * Loads latest releases from the OMDB API on initial load
 
-!(readme-pic-1.png)
+![readme-pic-1](/readme-pic-1.png)
 
 ### `npm test`
 
