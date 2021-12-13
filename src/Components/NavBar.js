@@ -1,6 +1,6 @@
 import React from "react";
 
-const Navbar = (props) => {
+const NavBar = (props) => {
   return (
     <div className="navbar-container">
       <img
@@ -30,4 +30,4 @@ const Navbar = (props) => {
   );
 };
 
-export default Navbar;
+export default NavBar;

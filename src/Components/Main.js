@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Nominations from "./Nominations";
 import SearchResults from "./SearchResults";
-import Navbar from "./Navbar";
+import NavBar from "./NavBar";
 import axios from "axios";
 
 const Main = () => {
@@ -22,7 +22,7 @@ const Main = () => {
 
   const fetchLatestMovies = async () => {
     const response = await axios(
-      `https://www.omdbapi.com/?s='the'&y=2020&apikey=${process.env.REACT_APP_OMDB_KEY}`
+      `https://www.omdbapi.com/?s='the'&y=2020&apikey=c8c11022`
     );
     setResults(response.data.Search);
   };
@@ -41,7 +41,7 @@ const Main = () => {
   const fetchMovies = async (e) => {
     e.preventDefault();
     const response = await axios(
-      `https://www.omdbapi.com/?s=${query}&apikey=${process.env.REACT_APP_OMDB_KEY}`
+      `https://www.omdbapi.com/?s=${query}&apikey=c8c11022`
     );
     if (response.data.Error) {
       setError(response.data.Error);
@@ -84,7 +84,7 @@ const Main = () => {
 
   return (
     <div className="App">
-      <Navbar
+      <NavBar
         query={query}
         fetchMovies={fetchMovies}
         setMovieQuery={setMovieQuery}
