@@ -1,15 +1,19 @@
-# Getting Started with Create React App
+# Shoppies Awards
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Description
 
-In the project directory, you can run:
+Shoppies_Awards is a front-end web app that allows users to nominate upto 5 movies of their choice for the Shoppies awards night. The nominations are extracted from www.omdapi.com API. Upon selection, the nominations are stored in local storage in case a user wants to end a session and come back and complete the nomination process.
 
-### `npm start`
+### Tech Stack used:
+* React.js
+* Javascript
+* HTML
+* CSS
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### App Features
+* Loads latest releases from the OMDB API on initial load
 
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
