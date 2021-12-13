@@ -1,0 +1,70 @@
+.movie-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 30px;
+  }
+  
+  .movie-card {
+    text-align: center;
+    display: grid;
+    justify-items: center;
+  }
+  
+  .movie-img-container {
+    height: 300px;
+    width: 220px;
+    object-fit: cover;
+  
+    .movie-img {
+      height: 100%;
+      width: 100%;
+    }
+  }
+  .movie-title {
+    font-size: 1.4rem;
+  }
+  .empty-card {
+    height: 300px;
+    width: 220px;
+    background-color: var(--shoppies-grey);
+  }
+  .empty-card-container {
+    text-align: center;
+    display: grid;
+    justify-items: center;
+  }
+  
+  .nominate-button {
+    height: fit-content;
+    color: seagreen;
+    text-transform: uppercase;
+    padding: 10px;
+    border: 4px solid seagreen;
+    border-radius: 6px;
+    transition: all 0.3s ease 0s;
+    &:hover:enabled {
+      transition: all 0.3s ease 0s;
+      background-color: seagreen;
+      color: white;
+    }
+  }
+  
+  .nominate-button:disabled {
+    opacity: 0.65;
+    cursor: not-allowed;
+  }
+  
+  .remove-nomination-button {
+    color: var(--shoppies-red);
+    height: fit-content;
+    text-transform: uppercase;
+    padding: 10px;
+    border: 4px solid var(--shoppies-red);
+    border-radius: 6px;
+    transition: all 0.3s ease 0s;
+    &:hover {
+      transition: all 0.3s ease 0s;
+      background-color: var(--shoppies-red);
+      color: white;
+    }
+  }
